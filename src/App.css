@@ -1,0 +1,236 @@
+body {
+  background-color: #ff4b4b;
+}
+
+
+.custom-h1 {
+  color: #10002b;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.custom-container {
+  max-width: 600px;
+  margin: 80px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  
+}
+
+.custom-input{
+
+  width: 100%;
+  font-size: 18px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+  display: block;
+  height: 45px;
+  :hover {
+      border-color: #ccc;
+  }
+  :focus{
+      border-color: #9147ff;
+      background: #fff;
+  }
+  
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+
+
+.preview {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+
+  border-radius: 4px;
+  height: 100%;
+
+
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  margin-bottom: 20px;
+}
+
+
+.emoji {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#copy-button {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+
+    margin-bottom: 15px;
+  }
+
+  .button-4:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+  }
+
+  .button-4:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+  }
+
+  .button-4:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+  }
+
+  .button-4:focus {
+    outline: 1px transparent;
+  }
+
+  .button-4:before {
+    display: none;
+  }
+
+  .button-4:-webkit-details-marker {
+    display: none;
+  }
+
+
+#copy-button:hover {
+  background-color: #10002b;
+  color: #ffffff;
+}
+
+/* circles */
+.circles {
+  width: 20%;
+  gap: 8px;
+  padding: 10px;
+
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.c {
+  width: 09px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+}
+
+.c:first-child {
+  background-color: red;
+}
+
+.c:nth-child(2) {
+  background-color: rgb(204, 167, 4);
+}
+
+.c:last-child {
+  background-color: green;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.react-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding-top: 4px;
+}
+
+.bootstrap-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  padding-top: 4px;
+}
+
+.vite-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  padding-top: 4px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.insta{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 576px) {
+  .custom-container {
+    max-width: 80%;
+    margin: 60px auto;
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .custom-container {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+  }
+}
